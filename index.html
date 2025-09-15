@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La stilista che crea opere d’arte da indossare</title>
+  <style>
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+
+    body{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+      text-align:center;
+      font-family:'Georgia',serif;
+      color:#fff;
+      background-color:#13171f;
+      position:relative;
+    }
+
+    h1{font-size:2.2em;margin-bottom:20px;letter-spacing:1px;position:relative;z-index:2}
+    p {font-size:1.1em;margin-bottom:25px;max-width:500px;position:relative;z-index:2}
+
+    .gold{background:#c8a95f;color:#000;padding:2px 6px;border-radius:3px}
+
+    .img-wrapper{
+      position:relative;
+      z-index:1;
+    }
+    .subject{
+      width:90%;max-width:500px;height:auto;
+      filter:brightness(0.92) contrast(1.05) saturate(0.85);
+      mix-blend-mode:multiply;
+      border:none;outline:none;border-radius:0;
+    }
+
+    .subject-shadow{
+      position:absolute;
+      bottom:0;left:50%;
+      transform:translateX(-50%);
+      width:250px;height:60px;
+      background:radial-gradient(circle, rgba(0,0,0,0.4) 0%, transparent 80%);
+      filter:blur(12px);
+      z-index:0;
+    }
+
+    .cta-button{
+      display:inline-block;
+      background:#c8a95f;
+      color:#000;
+      padding:15px 30px;
+      font-size:1.1em;
+      text-decoration:none;
+      border-radius:30px;
+      transition:background .3s, color .3s;
+      position:relative;
+      z-index:2;
+      font-weight:600;
+      margin-top:40px;
+    }
+    .cta-button:hover{
+      background:#b89755;
+      color:#000;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>La stilista che crea<br><span class="gold">opere d’arte</span> da indossare</h1>
+  <p>Ogni borsa è un pezzo unico, pensato per chi ama l’eleganza senza tempo.</p>
+
+  <div class="img-wrapper">
+    <img src="VANESSABAGSSS.png" alt="Borsa artigianale di Vanessa" class="subject">
+    <div class="subject-shadow"></div>
+  </div>
+
+  <!-- Pulsante WhatsApp Business collegato al numero +39 351 303 4803 -->
+  <a class="cta-button" href="https://wa.me/393513034803?text=Ciao!%20Vorrei%20scoprire%20le%20tue%20borse." target="_blank" rel="noopener">
+    Scopri le mie borse
+  </a>
+
+</body>
+</html>
